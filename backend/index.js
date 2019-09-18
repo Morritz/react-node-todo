@@ -234,7 +234,6 @@ dbconnection.connect(function(err) {
     {
         case 'ECONNREFUSED':
             clog("Connection to the database has been refused",1);
-            setInterval(function(){ console.log('2222'); }, 3000);
             break;
         default:
             break;
